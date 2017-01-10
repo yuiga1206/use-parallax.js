@@ -1,0 +1,91 @@
+doctype
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    //- meta(http-equiv="x-ua-compatible", content="ie=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    block title
+    block desc
+    base(href="http://localhost:3000/", target="_self")
+    //- base(href="http://n-di.kir.jp/clients_tst/fujiiryoki/c5_static/", target="_self")
+    link(rel="stylesheet", href="common/css/slick.css")
+    link(rel="stylesheet", href="common/css/validationEngine.jquery.css")
+    link(rel="stylesheet", href="common/css/app.css")
+    script(src="https://ajaxzip3.github.io/ajaxzip3.js")
+  body
+    include _header
+    main
+      block pageTitle
+      block body
+    //- include _bnr
+    include _footer
+    script(src="common/js/jquery.js")
+    script(src="common/js/what-input.js")
+    script(src="common/js/foundation.js")
+    //- script(src="common/js/jquery-1.12.4.min.js")
+    script(src="common/js/slick.min.js")
+    script(src="common/js/jquery.validationEngine.js")
+    script(src="common/js/jquery.validationEngine-ja.js")
+    //- script(src="common/js/jquery.matchHeight-min.js")
+    script(src="common/js/app.js")
+    script.
+      jQuery(function($){
+        $('.slider').slick({
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: false,
+          infinite: true,
+          //- autoplay: true,
+          autoplay: false,
+          autoplaySpeed: 4000,
+          speed: 500,
+          pauseOnHover: false,
+          fade: false,
+          cssEase: 'linear',
+          centerMode: true,
+          centerPadding: '16.5625%',
+          centerPadding: '27%',
+          prevArrow: '<button type="button" data-role="none" class="slick-prev" style="display: inline-block;"></button>',
+      		nextArrow: '<button type="button" data-role="none" class="slick-next" style="display: inline-block;"></button>',
+          responsive: [
+            {
+              breakpoint: 1700,
+              settings: {
+                centerPadding: '24.2%'
+              }
+            },
+            {
+              breakpoint: 1500,
+              settings: {
+                centerPadding: '20.8%'
+              }
+            },
+            {
+              breakpoint: 1314,
+              settings: {
+                centerPadding: '16.5625%'
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                centerMode: true,
+                centerPadding: '16.5625%',
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+      });
+    //- script.
+    //-   $(function() {
+    //-     $('.site-items').matchHeight();
+    //-     $('.site-item1').matchHeight();
+    //-     $('.site-item2').matchHeight();
+    //-     $('.site-item3').matchHeight();
+    //-     $('.site-item4').matchHeight();
+    //-     $('.site-item5').matchHeight();
+    //-     $('.site-item6').matchHeight();
+    //-     $('.site-rental').matchHeight();
+    //-   });
