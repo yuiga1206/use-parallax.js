@@ -69,7 +69,7 @@ html {
 body {
   font-size: 1.3rem;
   line-height: 1.8;
-  font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Helvetica, Arial, Sans-Serif;
+  font-family: YuGothic, "游ゴシック", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Helvetica, Arial, Sans-Serif;
   color: #505050;
   text-align: left;
   background-color: #FFF;
@@ -192,6 +192,16 @@ a:hover {
 
 .topHeader-tab > p {
   margin-bottom: 54px;
+}
+
+.text {
+  height: 1000px;
+}
+
+.parallax-window {
+  width: 100%;
+  min-height: 28.3333vw;
+  background: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */

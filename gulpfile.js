@@ -26,7 +26,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task("pug", function() {
     gulp.src(
-        ["pug/**/*.pug",'!' + "pug/**/_*.pug"]
+        ["source/pug/**/*.pug",'!' + "source/pug/**/_*.pug"]
     )
         .pipe(plumber())
         .pipe(pug({pretty: true}))
